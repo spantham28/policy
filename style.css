@@ -233,18 +233,22 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .shelf-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 32px; margin-bottom: 40px; }
 .shelf-head h2 { font-size: var(--step-head); }
 .shelf-head p { margin: 0; max-width: 46ch; }
-.shelf { display: flex; gap: 6px; height: 460px; list-style: none; }
-.shelf li { flex: 1 1 0; min-width: 0; }
+.shelf { display: flex; flex-direction: column; gap: 6px; list-style: none; }
+/* books stacked flat: slightly different lengths, titles read normally */
+.shelf li:nth-child(4n+1) { width: 100%; }
+.shelf li:nth-child(4n+2) { width: 94%; }
+.shelf li:nth-child(4n+3) { width: 97%; }
+.shelf li:nth-child(4n+4) { width: 91%; }
 .spine {
-  display: flex; flex-direction: column; height: 100%; text-decoration: none;
-  writing-mode: vertical-rl; background: var(--paper); color: var(--ink);
-  padding: 18px 0; align-items: center; gap: 14px;
+  display: flex; align-items: center; gap: 20px; min-height: 60px; padding: 10px 10px 10px 24px;
+  text-decoration: none; background: var(--paper-2); color: var(--ink);
+  border-left: 10px solid var(--team, var(--crimson));
   transition: background-color .25s var(--ease), color .25s var(--ease), transform .25s var(--ease);
 }
-.spine .t { font-family: var(--display); font-size: 1.125rem; line-height: 1.1; overflow: hidden; text-overflow: ellipsis; max-height: 100%; }
-.spine .d { margin-top: auto; padding: 10px 6px; font-size: var(--step-small); color: var(--paper); background: var(--team, var(--crimson)); }
-.spine .y { font-size: var(--step-small); color: var(--muted); }
-.spine:hover, .spine:focus-visible { background: var(--ink); color: var(--paper); transform: translateY(-10px); }
+.spine .t { flex: 1 1 auto; min-width: 0; font-family: var(--display); font-size: clamp(1.125rem, 1rem + .4vw, 1.375rem); line-height: 1.2; }
+.spine .y { flex: 0 0 auto; font-size: var(--step-small); color: var(--muted); }
+.spine .d { flex: 0 0 7.5rem; text-align: center; padding: 8px 10px; font-size: var(--step-small); color: var(--paper); background: var(--team, var(--crimson)); }
+.spine:hover, .spine:focus-visible { background: var(--ink); color: var(--paper); transform: translateX(10px); }
 .spine:hover .y, .spine:focus-visible .y { color: var(--stone); }
 .shelf-foot { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 16px 32px; align-items: center; justify-content: space-between; }
 .legend { display: flex; flex-wrap: wrap; gap: 10px 22px; list-style: none; font-size: var(--step-small); }
@@ -588,12 +592,10 @@ legend { font-family: var(--display); font-size: 1.5rem; padding: 0; margin-bott
   .process .section-head { grid-column: 1 / -1; position: static; margin-bottom: 40px; }
   .slip { grid-column: 1 / -1; padding: 32px 22px 0; }
   .slip .total { margin: 28px -22px 0; padding: 14px 22px; }
-  .shelf { height: auto; flex-wrap: wrap; gap: 10px; }
-  .shelf li { flex: 0 1 auto; }
-  .spine { writing-mode: horizontal-tb; flex-direction: row; height: auto; padding: 8px 0 8px 12px; gap: 10px; }
-  .spine .t { font-size: 1.0625rem; }
-  .spine .d { margin-top: 0; padding: 8px 10px; }
-  .spine .y { display: none; }
+  .shelf li:nth-child(n) { width: 100%; }
+  .spine { flex-wrap: wrap; gap: 6px 14px; padding: 12px 12px 12px 18px; }
+  .spine .t { flex-basis: 100%; }
+  .spine .d { flex-basis: auto; padding: 4px 10px; }
   .spine:hover, .spine:focus-visible { transform: none; }
   .coupon { grid-template-columns: 1fr;
     -webkit-mask:
