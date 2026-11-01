@@ -1,298 +1,250 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Policy Program — Harvard Institute of Politics</title>
-  <meta name="description" content="An undergraduate-run think tank at Harvard's Institute of Politics. Students produce rigorous policy research for federal legislators, NGOs, and state agencies." />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Policy Program, Harvard Institute of Politics</title>
+<meta name="description" content="Harvard IOP's independent, student-run think tank. Undergraduate research teams publish open-access policy briefs and collaborate with government agencies. Now sourcing Spring 2027 topics.">
+<meta name="theme-color" content="#a51c30">
+<link rel="icon" href="assets/harvard-shield.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.className += ' js';</script>
 </head>
 <body>
-
-<!-- ── Header ──────────────────────────────────────────── -->
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
-  <div class="top-bar">
-    <a href="https://iop.harvard.edu/programs/policy-program" target="_blank" rel="noopener noreferrer">Harvard Institute of Politics</a>
-    &nbsp;·&nbsp; Policy Program
-  </div>
-  <nav class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      <img class="nav-shield" src="assets/harvard-shield.png" alt="Harvard shield" width="24" height="24" style="object-fit:contain;">
-      <div class="nav-brand-text">
-        <span class="nav-brand-name">Policy Program</span>
-        <span class="nav-brand-sub">Harvard IOP</span>
-      </div>
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/harvard-shield.png" alt="" width="34" height="34">
+      <span>Policy Program<small>Harvard Institute of Politics</small></span>
     </a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="people.html">People</a></li>
-      <li><a href="teams/health.html" class="nav-hide-sm">Research</a></li>
-      <li><a href="briefs/index.html">Briefs</a></li>
-      <li><a href="https://iop.harvard.edu/programs/policy-program" target="_blank" rel="noopener noreferrer" class="nav-cta">IOP ↗</a></li>
-    </ul>
-  </nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="teams/health.html">Research teams</a>
+      <a href="briefs/index.html">Briefs</a>
+      <a href="team.html">Our team</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
-
-<!-- ── Hero: full-viewport background photo ────────────── -->
-<section class="hero-bg" style="background-image: url('assets/ioppolicy1.png');">
-  <div class="hero-box">
-    <div class="hero-maze-wrap">
-      <svg class="hero-maze" width="64" height="64" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M52,4 H76 V28 M28,28 V52 M4,76 H52 V52" stroke="#A51C30" stroke-width="1" opacity="0.2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path class="maze-path" d="M4,4 H52 V28 H4 V52 H76 V76" stroke="#A51C30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="242" stroke-dashoffset="242"/>
-      </svg>
-    </div>
-    <h1>Policy Program</h1>
-    <p>Harvard IOP's undergraduate-run think tank — producing rigorous, commissioner-driven policy research for U.S. legislators, state agencies, NGOs, and international organizations.</p>
-    <div class="hero-actions">
-      <a href="briefs/index.html" class="btn-primary">Browse Research Briefs</a>
-      <a href="people.html" class="btn-secondary">Meet the Team</a>
-    </div>
-  </div>
-</section>
-
-<!-- ── Stats strip ──────────────────────────────────────── -->
-<div class="stats-strip">
-  <div class="stat-block">
-    <span class="stat-num-h">2007</span>
-    <span class="stat-label-h">Founded</span>
-  </div>
-  <div class="stat-block">
-    <span class="stat-num-h">20+</span>
-    <span class="stat-label-h">Briefs Published</span>
-  </div>
-  <div class="stat-block">
-    <span class="stat-num-h">4</span>
-    <span class="stat-label-h">Research Teams</span>
-  </div>
-  <div class="stat-block">
-    <span class="stat-num-h">50+</span>
-    <span class="stat-label-h">Commissioner Partners</span>
-  </div>
-</div>
-
-<!-- ── About: background photo section ─────────────────── -->
-<section class="section-graphic" style="background-image: url('assets/ioppolicy2.png');">
-  <div class="section-content">
-    <div class="about-panel">
-      <div class="accent-line"></div>
-      <h3>About the Policy Program</h3>
-      <p>
-        The Policy Program is Harvard IOP's undergraduate-run think tank, giving students the opportunity
-        to develop skills in policy research and writing while effecting real-world change. Research from
-        the Policy Program has helped develop new legislation, build community programs, and analyze
-        pressing issues facing communities and states across the country. In the past, we have worked
-        with state, federal, and international commissioners.
-        <br/><br/>
-        Students meet weekly with their research teams to discuss their work, learn best practices in
-        policy writing, and hear from distinguished guest speakers. At semester's end, students present
-        their completed briefs to commissioners and community stakeholders. No prior policy research
-        experience is required — our goal is to spark genuine interest in public policy and for every
-        student to learn something new.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- ── Research Teams ───────────────────────────────────── -->
-<section style="padding: 4.5rem 0;">
-  <div class="page-wrap">
-    <div class="section-header">
-      <div>
-        <div class="accent-line"></div>
-        <h2>Four Research Teams</h2>
-      </div>
-      <a href="briefs/index.html" class="section-link">All Briefs →</a>
-    </div>
-
-    <div class="teams-grid">
-
-      <a href="teams/health.html" class="team-card">
-        <span class="team-card-arrow">→</span>
-        <h3>Health Policy</h3>
-        <p>From aging-care infrastructure to mental health access and epidemic response, our Health team produces evidence-based recommendations for legislators and public health agencies.</p>
-        <div class="team-card-tags">
-          <span class="tag">Public Health</span>
-          <span class="tag">Mental Health</span>
-          <span class="tag">Women's Health</span>
-        </div>
-      </a>
-
-      <a href="teams/tech-policy.html" class="team-card">
-        <span class="team-card-arrow">→</span>
-        <h3>Technology Policy</h3>
-        <p>Analyzing AI governance, patent reform, autonomous vehicles, and green infrastructure, our Tech team bridges the gap between emerging technology and legislative frameworks.</p>
-        <div class="team-card-tags">
-          <span class="tag">AI &amp; Regulation</span>
-          <span class="tag">Energy</span>
-          <span class="tag">Patent Reform</span>
-        </div>
-      </a>
-
-      <a href="teams/education.html" class="team-card">
-        <span class="team-card-arrow">→</span>
-        <h3>Education Policy</h3>
-        <p>Examining school climate, equity gaps, and global education access, our Education team develops recommendations for school districts, state boards, and international bodies.</p>
-        <div class="team-card-tags">
-          <span class="tag">K–12 Equity</span>
-          <span class="tag">Global Access</span>
-          <span class="tag">School Climate</span>
-        </div>
-      </a>
-
-      <a href="teams/economics.html" class="team-card">
-        <span class="team-card-arrow">→</span>
-        <h3>Economics &amp; Labor</h3>
-        <p>Addressing trade policy, housing affordability, labor market disparities, and financial regulation, our Economics team connects quantitative research with actionable policy.</p>
-        <div class="team-card-tags">
-          <span class="tag">Labor Markets</span>
-          <span class="tag">Housing</span>
-          <span class="tag">Trade Policy</span>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- ── Leadership: photo grid ───────────────────────────── -->
-<section class="leaders-section">
-  <div class="page-wrap">
-    <div class="leaders-header-row">
-      <div>
-        <div class="accent-line"></div>
-        <h2>Meet Our Student Leadership</h2>
-      </div>
-      <a href="people.html" class="section-link" style="color:white; margin-top:auto;">Full Directory →</a>
-    </div>
-
-    <div class="leaders-grid">
-
-      <!-- Left: group photo -->
-      <div class="leader-photo-card large">
-        <img src="assets/grouppolicy.jpg" alt="Policy Program Leadership — Midpoint Presentation" />
-        <p>Spring 2025 Midpoint Presentation</p>
-      </div>
-
-      <!-- Right: individual headshots -->
-      <div class="leaders-right">
-
-        <!-- Co-Chairs row -->
-        <div class="leaders-top">
-          <div class="leader-photo-card">
-            <img src="assets/AlisaLee.jpg" alt="Alisa Lee" />
-            <p>Alisa Lee<br/><span>Co-Chair</span></p>
-          </div>
-          <div class="leader-photo-card">
-            <img src="assets/MatthewTobin.jpg" alt="Matthew Tobin" />
-            <p>Matt Tobin<br/><span>Co-Chair</span></p>
-          </div>
-        </div>
-
-        <!-- Directors row -->
-        <div class="leaders-bottom">
-          <div class="leader-photo-card">
-            <img src="assets/ZachBerg.png" alt="Zach Berg" />
-            <p>Zach Berg<br/><span>Director of Community</span></p>
-          </div>
-          <div class="leader-photo-card">
-            <img src="assets/KatieCulbert.jpg" alt="Katie Culbert" />
-            <p>Katie Culbert<br/><span>Director of Technology</span></p>
-          </div>
-          <div class="leader-photo-card">
-            <img src="assets/TinoKarakousis.jpg" alt="Tino Karakousis" />
-            <p>Tino Karakousis<br/><span>Director of Communications</span></p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── Featured Briefs ────────────────────────────────────── -->
-<section style="padding: 4.5rem 0;">
-  <div class="page-wrap">
-    <div class="section-header">
-      <div>
-        <div class="accent-line"></div>
-        <h2>Featured Briefs</h2>
-      </div>
-      <a href="briefs/index.html" class="section-link">All Briefs →</a>
-    </div>
-
-    <div class="brief-list">
-
-      <a href="briefs/aging-womens-healthcare.html" class="brief-item">
+<main id="main">
+<section class="hero" aria-labelledby="title">
+  <div class="wrap grid">
+    <div class="memo cut-top-corners">
+      <h1 id="title">Harvard's student think tank</h1>
+      <div class="memo-body">
         <div>
-          <div class="brief-item-team text-crimson">Health Policy Team</div>
-          <h3>Bridging Gaps in Care: Strategic Policy Initiatives for Enhancing Health Care Services for Aging Women</h3>
-          <p>Evaluates federal and state-level gaps in healthcare delivery for women over 65, with actionable recommendations for Medicare reform and community-based care infrastructure.</p>
+          <p class="memo-lead">The Policy Program is the Harvard Institute of Politics' independent, undergraduate-run think tank. Since 2007, student research teams have taken on pressing policy questions and published open-access briefs on health care, technology, education, the economy and more.</p>
+          <div class="memo-actions">
+            <a class="btn" href="briefs/index.html">Read our briefs</a>
+            <a class="link" href="#research-title">See this semester's research</a>
+          </div>
         </div>
-        <div class="brief-item-meta">
-          <div class="brief-item-date">Spring 2024</div>
-        </div>
-      </a>
-
-      <a href="briefs/building-electrification.html" class="brief-item">
-        <div>
-          <div class="brief-item-team text-crimson">Technology Policy Team</div>
-          <h3>Accelerating Building Electrification in New England: A Legislative Roadmap</h3>
-          <p>Examines the policy, economic, and infrastructure barriers to residential building electrification across New England states, proposing a coordinated regional framework.</p>
-        </div>
-        <div class="brief-item-meta">
-          <div class="brief-item-date">Fall 2023</div>
-        </div>
-      </a>
-
-      <a href="briefs/covid-education.html" class="brief-item">
-        <div>
-          <div class="brief-item-team text-crimson">Education Policy Team</div>
-          <h3>Challenges and Opportunities in the COVID-19 Global Education Response</h3>
-          <p>Assesses how school systems worldwide responded to pandemic-driven disruptions and identifies durable policy reforms for equity-centered recovery.</p>
-        </div>
-        <div class="brief-item-meta">
-          <div class="brief-item-date">Fall 2022</div>
-        </div>
-      </a>
-
+        <figure class="plate">
+          <div class="plate-frame"><img src="assets/grouppolicy.jpg" alt="Two Policy Program co-chairs presenting to a full lecture hall of student researchers" width="1000" height="747" fetchpriority="high"></div>
+          <figcaption>Spring 2025 midpoint presentation</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ── Footer ──────────────────────────────────────────── -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <div class="footer-name">Policy Program</div>
-      <p>Harvard Institute of Politics<br/>79 John F. Kennedy Street<br/>Cambridge, MA 02138</p>
-    </div>
-    <div class="footer-col">
-      <h5>Research</h5>
-      <ul>
-        <li><a href="teams/health.html">Health Policy</a></li>
-        <li><a href="teams/tech-policy.html">Technology Policy</a></li>
-        <li><a href="teams/education.html">Education Policy</a></li>
-        <li><a href="teams/economics.html">Economics &amp; Labor</a></li>
+<section class="continue" aria-labelledby="worked">
+  <div class="wrap grid">
+    <div class="memo">
+      <div class="intro-head" data-reveal>
+        <h2 id="worked">What we've worked on</h2>
+        <span></span>
+        <p>Each semester our teams choose a question, gather the evidence and publish a brief with concrete recommendations. A few recent ones:</p>
+      </div>
+      <ul class="topics" data-reveal>
+        <li data-team="health"><a href="briefs/aging-womens-healthcare.html">Bridging gaps in care for aging women</a><span>Health Policy, Spring 2024</span></li>
+        <li data-team="economics"><a href="briefs/index.html">Federal homelessness research</a><span>Economics &amp; Labor, Spring 2024</span></li>
+        <li data-team="tech"><a href="briefs/building-electrification.html">Building electrification in New England</a><span>Technology Policy, Fall 2023</span></li>
+        <li data-team="health"><a href="briefs/index.html">Mental health screenings and youth</a><span>Health Policy, Fall 2023</span></li>
+        <li data-team="education"><a href="briefs/index.html">Returned Peace Corps volunteers</a><span>Education Policy, Fall 2023</span></li>
+        <li data-team="economics"><a href="briefs/index.html">Gig work and the benefits gap</a><span>Economics &amp; Labor, Fall 2023</span></li>
+        <li data-team="education"><a href="briefs/index.html">School resource officers</a><span>Education Policy, Spring 2023</span></li>
+        <li data-team="health"><a href="briefs/index.html">The fentanyl epidemic</a><span>Health Policy, Spring 2023</span></li>
       </ul>
-    </div>
-    <div class="footer-col">
-      <h5>Program</h5>
-      <ul>
-        <li><a href="people.html">People</a></li>
-        <li><a href="briefs/index.html">Research Briefs</a></li>
-        <li><a href="https://iop.harvard.edu/programs/policy-program" target="_blank" rel="noopener noreferrer">IOP Website ↗</a></li>
-        <li><a href="https://iop.harvard.edu/about/student-leadership" target="_blank" rel="noopener noreferrer">Student Leadership ↗</a></li>
+      <ul class="facts" data-reveal>
+        <li><b>2007</b><span>Year the program was founded</span></li>
+        <li><b>4</b><span>Research teams this semester</span></li>
+        <li><b>20+</b><span>Policy briefs published</span></li>
+        <li><b>50+</b><span>Partner organizations</span></li>
       </ul>
+      <div class="intro-pic" data-reveal>
+        <p>Our research has helped develop new legislation, build community programs, and analyze pressing issues facing communities and states across the country.</p>
+        <img src="assets/capitol.jpg" alt="The dome of the United States Capitol with the American flag" width="860" height="600" loading="lazy">
+      </div>
     </div>
   </div>
-  <div class="footer-bottom">
-    <span>© 2025 Harvard IOP Policy Program</span>
-    <a href="https://iop.harvard.edu" target="_blank" rel="noopener noreferrer">iop.harvard.edu ↗</a>
+</section>
+
+<section class="section" aria-labelledby="research-title">
+  <div class="wrap docket-wrap">
+    <div class="section-head" data-reveal>
+      <h2 id="research-title">This semester's research</h2>
+      <p>Four teams are at work in Fall 2026. Here is what each one is taking on.</p>
+      <img src="assets/ioppolicy2.png" alt="The Declaration of Independence and the Constitution, rolled together" width="1181" height="611" loading="lazy">
+    </div>
+    <div class="docket scallop-y" data-reveal>
+      <h3>Fall 2026</h3>
+      <p>Research teams and their projects</p>
+          <div class="docket-group">
+            <h4><a href="teams/health.html">Health Policy</a></h4>
+            <p class="docket-topic">Researching the opioid epidemic in rural Massachusetts and advocating for statewide reform.</p>
+            <p class="docket-leads">Led by Ifra Iyoob, Nneamaka Onyia, Zinia Khattar</p>
+          </div>
+          <div class="docket-group">
+            <h4><a href="teams/immigration.html">Immigration Policy</a></h4>
+            <p class="docket-topic">Working with NYC Mayor Zohran Mamdani's Office of Immigrant Affairs to protect undocumented children and project the economic cost of federal policy changes.</p>
+            <p class="docket-leads">Led by Zach Berg, Audrey Lin, Evie Ferguson</p>
+          </div>
+          <div class="docket-group">
+            <h4><a href="teams/tech-policy.html">Technology Policy</a></h4>
+            <p class="docket-topic">Working with DrumWave and the International Data Reserve to inform the federal Data Savings Act on data compensation for AI technologies.</p>
+            <p class="docket-leads">Led by Jack Rubin, Austin Li, Prayush Mishra</p>
+          </div>
+          <div class="docket-group">
+            <h4><a href="teams/midterms.html">Midterm Elections</a></h4>
+            <p class="docket-topic">Exploring how money and organized interests are shaping the 2026 midterm elections.</p>
+            <p class="docket-leads">Led by Ruby Arun, Ava Kanitkar, Arav Mehta</p>
+          </div>
+      <p class="hours">Teams meet weekly during the semester.<br>Briefs are published here when they are finished.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--crimson on-crimson" aria-labelledby="featured-title">
+  <div class="wrap">
+    <h2 id="featured-title" class="featured-title" data-reveal>From our briefs</h2>
+    <div class="featured">
+      <article class="feature-main" data-reveal>
+                <h3><a href="briefs/aging-womens-healthcare.html">Bridging gaps in care for aging women</a></h3>
+        <p class="feature-meta">Health Policy team, Spring 2024</p>
+        <p>Women over the age of 65 represent one of the fastest-growing segments of the U.S. population, yet federal healthcare policy has historically treated aging and gender as separate analytic categories. This brief identifies structural gaps in Medicare coverage, community-based care availability, and preventive service delivery that disproportionately affect aging women — particularly those in rural areas and those from racial and ethnic minority communities.</p>
+        <h4>The team recommends</h4>
+        <ul class="feature-recs">
+            <li>Expand Medicare Preventive Service Coverage</li>
+            <li>Strengthen the Long-Term Care Workforce</li>
+            <li>Scale Community Health Navigator Programs</li>
+        </ul>
+        <a class="link" href="briefs/aging-womens-healthcare.html">Read the brief</a>
+      </article>
+      <div class="feature-side">
+        <article data-reveal>
+                    <h3><a href="briefs/building-electrification.html">Building electrification in New England</a></h3>
+          <p class="feature-meta">Technology Policy team, Fall 2023</p>
+          <p>Buildings account for approximately 27% of greenhouse gas emissions in New England — among the highest regional shares in the United States — driven largely by natural gas heating in aging residential stock.</p>
+          <a class="link" href="briefs/building-electrification.html">Read the brief</a>
+        </article>
+        <article data-reveal>
+                    <h3><a href="briefs/covid-education.html">COVID-19 and global education</a></h3>
+          <p class="feature-meta">Education Policy team, Fall 2022</p>
+          <p>The COVID-19 pandemic precipitated the largest disruption to global education in recorded history.</p>
+          <a class="link" href="briefs/covid-education.html">Read the brief</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper" aria-labelledby="shelf">
+  <div class="wrap">
+    <div class="shelf-head" data-reveal>
+      <h2 id="shelf">Every brief, shelved</h2>
+      <p>Twelve briefs from the last four years, colored by the team that wrote them.</p>
+    </div>
+    <ul class="shelf" aria-label="Research briefs">
+        <li><a class="spine" data-team="health" href="briefs/aging-womens-healthcare.html"><span class="t">Bridging gaps in care for aging women</span><span class="y">Spring 2024</span><span class="d">Health</span></a></li>
+        <li><a class="spine" data-team="economics" href="briefs/index.html"><span class="t">Federal homelessness research</span><span class="y">Spring 2024</span><span class="d">Economics</span></a></li>
+        <li><a class="spine" data-team="tech" href="briefs/building-electrification.html"><span class="t">Building electrification in New England</span><span class="y">Fall 2023</span><span class="d">Tech</span></a></li>
+        <li><a class="spine" data-team="health" href="briefs/index.html"><span class="t">Mental health screenings and youth</span><span class="y">Fall 2023</span><span class="d">Health</span></a></li>
+        <li><a class="spine" data-team="education" href="briefs/index.html"><span class="t">Returned Peace Corps volunteers</span><span class="y">Fall 2023</span><span class="d">Education</span></a></li>
+        <li><a class="spine" data-team="economics" href="briefs/index.html"><span class="t">Gig work and the benefits gap</span><span class="y">Fall 2023</span><span class="d">Economics</span></a></li>
+        <li><a class="spine" data-team="education" href="briefs/index.html"><span class="t">School resource officers</span><span class="y">Spring 2023</span><span class="d">Education</span></a></li>
+        <li><a class="spine" data-team="health" href="briefs/index.html"><span class="t">The fentanyl epidemic</span><span class="y">Spring 2023</span><span class="d">Health</span></a></li>
+        <li><a class="spine" data-team="tech" href="briefs/index.html"><span class="t">Autonomous vehicles and liability</span><span class="y">Spring 2023</span><span class="d">Tech</span></a></li>
+        <li><a class="spine" data-team="economics" href="briefs/index.html"><span class="t">Reshoring manufacturing</span><span class="y">Spring 2023</span><span class="d">Economics</span></a></li>
+        <li><a class="spine" data-team="education" href="briefs/covid-education.html"><span class="t">COVID-19 and global education</span><span class="y">Fall 2022</span><span class="d">Education</span></a></li>
+        <li><a class="spine" data-team="tech" href="briefs/index.html"><span class="t">Patent trolling and innovation</span><span class="y">Fall 2022</span><span class="d">Tech</span></a></li>
+    </ul>
+    <div class="shelf-foot">
+      <ul class="legend" aria-label="Research teams">
+          <li data-team="health"><i></i>Health Policy</li>
+          <li data-team="tech"><i></i>Technology Policy</li>
+          <li data-team="education"><i></i>Education Policy</li>
+          <li data-team="economics"><i></i>Economics &amp; Labor</li>
+      </ul>
+      <a class="link" href="briefs/index.html">Browse all briefs</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--crimson process on-crimson" aria-labelledby="how">
+  <div class="wrap grid">
+    <div class="section-head" data-reveal>
+      <h2 id="how">How a brief is made</h2>
+      <p>Each team owns its research from the first question to publication. Agencies and experts working on the same issues sometimes share data and perspective along the way. The conclusions are the students' own.</p>
+    </div>
+    <div class="slip zigzag-bottom" data-reveal>
+      <h3>Before the semester</h3>
+      <ol>
+        <li><span class="what">Teams choose their research questions</span><span class="dots"></span><span class="when">Before term</span></li>
+        <li><span class="what">New research members join</span><span class="dots"></span><span class="when">Each semester</span></li>
+      </ol>
+      <h3>The first weeks</h3>
+      <ol>
+        <li><span class="what">Literature, data and interviews</span><span class="dots"></span><span class="when">Weekly</span></li>
+        <li><span class="what">Guest speakers and writing workshops</span><span class="dots"></span><span class="when">Through term</span></li>
+      </ol>
+      <h3>Midpoint</h3>
+      <ol>
+        <li><span class="what">Midpoint presentation to the program</span><span class="dots"></span><span class="when">Mid-semester</span></li>
+        <li><span class="what">Board review of each draft</span><span class="dots"></span><span class="when">Ongoing</span></li>
+      </ol>
+      <h3>Semester's end</h3>
+      <ol>
+        <li><span class="what">Final presentations</span><span class="dots"></span><span class="when">Last weeks</span></li>
+        <li><span class="what">Brief published under our name</span><span class="dots"></span><span class="when">Open access</span></li>
+      </ol>
+      <div class="total"><span>An independent policy brief, published</span><span>One semester</span></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer on-crimson">
+  <div class="wrap">
+    <div class="postcard scallop-top">
+      <div class="msg">
+        <h2>Policy Program</h2>
+        <p>Harvard IOP's independent, student-run think tank, publishing open-access policy research since 2007. Harvard undergraduates can apply each semester through the Institute of Politics.</p>
+        <a class="link" href="briefs/index.html">Read our briefs</a>
+      </div>
+      <address>
+        <span class="postage"><img src="assets/grouppolicy.jpg" alt="" width="80" height="107" loading="lazy"></span>
+        <a href="mailto:policy@harvardiop.org">policy@harvardiop.org</a>
+        <span>Harvard Institute of Politics</span>
+        <span>79 John F. Kennedy Street</span>
+        <span>Cambridge, MA 02138</span>
+        <a href="https://iop.harvard.edu/programs/policy-program" target="_blank" rel="noopener">iop.harvard.edu</a>
+      </address>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="teams/health.html">Research teams</a></li>
+        <li><a href="briefs/index.html">Briefs</a></li>
+        <li><a href="team.html">Our team</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+      <p class="imprint">© 2026 Harvard Institute of Politics Policy Program. Photographs by the Policy Program.</p>
+    </div>
   </div>
 </footer>
-
+<script src="site.js"></script>
 </body>
 </html>

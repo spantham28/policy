@@ -1,285 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research Briefs — IOP Policy Program</title>
-  <meta name="description" content="All research briefs published by the Harvard IOP Policy Program, spanning health, technology, education, and economics policy." />
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research briefs, Policy Program</title>
+<meta name="description" content="Policy briefs by the Harvard IOP Policy Program's student research teams.">
+<meta name="theme-color" content="#a51c30">
+<link rel="icon" href="../assets/harvard-shield.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<script>document.documentElement.className += ' js';</script>
 </head>
 <body>
-
+<a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
-  <div class="top-bar">
-    <a href="https://iop.harvard.edu/programs/policy-program" target="_blank" rel="noopener noreferrer">Harvard Institute of Politics</a>
-    &nbsp;·&nbsp; Policy Program
-  </div>
-  <nav class="nav-inner">
-    <a href="../index.html" class="nav-brand">
-<img class="nav-shield" src="../assets/harvard-shield.png" alt="Harvard shield" width="24" height="24" style="object-fit:contain;">
-      <div class="nav-brand-text">
-        <span class="nav-brand-name">Policy Program</span>
-        <span class="nav-brand-sub">Harvard IOP</span>
-      </div>
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <img src="../assets/harvard-shield.png" alt="" width="34" height="34">
+      <span>Policy Program<small>Harvard Institute of Politics</small></span>
     </a>
-    <ul class="nav-links">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../people.html">People</a></li>
-      <li><a href="../teams/health.html" class="nav-hide-sm">Research</a></li>
-      <li><a href="index.html" class="active">Briefs</a></li>
-      <li><a href="https://iop.harvard.edu/programs/policy-program" target="_blank" rel="noopener noreferrer" class="nav-cta">IOP ↗</a></li>
-    </ul>
-  </nav>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="../teams/health.html">Research teams</a>
+      <a href="../briefs/index.html" aria-current="page">Briefs</a>
+      <a href="../team.html">Our team</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
-
-<div class="page-header page-wrap">
-  <div class="section-kicker">Publications</div>
-  <h1>Research Briefs</h1>
-  <p>Policy briefs produced by student research teams and delivered to federal legislators, state agencies, NGOs, and international organizations. Each brief has a dedicated landing page with full bibliographic metadata for citation and DOI registration.</p>
-</div>
-
-<div class="page-wrap" style="padding-bottom: 5rem;">
-
-  <!-- DOI notice -->
-  <div style="background: var(--bg-2); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 1.25rem 1.5rem; margin: 2rem 0; display:flex; gap:1rem; align-items:flex-start;">
-    <span style="font-size:1.25rem; flex-shrink:0;">📋</span>
-    <div>
-      <strong style="display:block; font-size:0.875rem; color:var(--text); margin-bottom:0.25rem;">Citing Our Work</strong>
-      <p style="font-size:0.8125rem; margin:0; line-height:1.6;">Each brief has a dedicated landing page with full bibliographic metadata, abstract, keywords, and a suggested citation. Briefs with DOIs registered through Crossref are marked accordingly. Use the landing page URL as the stable reference point for any brief without a DOI.</p>
+<main id="main">
+<section class="page-hero" aria-labelledby="title">
+  <div class="wrap grid">
+    <div class="memo cut-top-corners">
+      <div class="memo-top">
+        <h1 id="title">Research briefs</h1>
+      </div>
+      <div class="hero-split">
+        <p class="memo-lead">Independent policy briefs written by our student research teams and published open access.</p>
+        <img class="tone" src="../assets/ioppolicy2.png" alt="The Declaration of Independence and the Constitution, rolled together" width="1181" height="611">
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- Filter tabs -->
-  <div style="display:flex; gap:0.375rem; flex-wrap:wrap; margin-bottom:2rem;">
-    <span style="font-size:0.8125rem; font-weight:600; color:white; background:var(--crimson); padding:0.375rem 0.875rem; border-radius:2rem;">All</span>
-    <a href="../teams/health.html" style="font-size:0.8125rem; font-weight:500; color:var(--text-2); background:var(--bg-2); border:1px solid var(--border); padding:0.375rem 0.875rem; border-radius:2rem; text-decoration:none;">Health Policy</a>
-    <a href="../teams/tech-policy.html" style="font-size:0.8125rem; font-weight:500; color:var(--text-2); background:var(--bg-2); border:1px solid var(--border); padding:0.375rem 0.875rem; border-radius:2rem; text-decoration:none;">Technology Policy</a>
-    <a href="../teams/education.html" style="font-size:0.8125rem; font-weight:500; color:var(--text-2); background:var(--bg-2); border:1px solid var(--border); padding:0.375rem 0.875rem; border-radius:2rem; text-decoration:none;">Education</a>
-    <a href="../teams/economics.html" style="font-size:0.8125rem; font-weight:500; color:var(--text-2); background:var(--bg-2); border:1px solid var(--border); padding:0.375rem 0.875rem; border-radius:2rem; text-decoration:none;">Economics &amp; Labor</a>
+<section class="page-body" aria-label="All briefs">
+  <div class="wrap grid">
+    <div class="memo">
+      <div class="filters" role="group" aria-label="Filter by team">
+        <button type="button" data-filter="all" aria-pressed="true">All teams</button>
+        <button type="button" data-filter="health" aria-pressed="false">Health Policy</button>
+        <button type="button" data-filter="tech" aria-pressed="false">Technology Policy</button>
+        <button type="button" data-filter="education" aria-pressed="false">Education Policy</button>
+        <button type="button" data-filter="economics" aria-pressed="false">Economics &amp; Labor</button>
+      </div>
+      <div class="year" data-reveal>
+        <h2>2024</h2>
+        <ul class="brief-list" data-reveal>
+          <li class="brief-item" data-team="health">
+            <div class="brief-meta"><span class="team">Health Policy team</span><span>Spring 2024</span><span>Open access</span></div>
+            <h3><a href="../briefs/aging-womens-healthcare.html">Bridging Gaps in Care: Strategic Policy Initiatives for Enhancing Health Care Services for Aging Women</a></h3>
+            <p>Evaluates federal and state-level gaps in healthcare delivery for women over 65, with recommendations for Medicare reform, community-based care, and preventive service coverage expansion.</p>
+          </li>
+          <li class="brief-item" data-team="economics">
+            <div class="brief-meta"><span class="team">Economics &amp; Labor team</span><span>Spring 2024</span><span>Landing page forthcoming</span></div>
+            <h3>Federal Homelessness Research: Gaps, Incentives, and a Path Forward</h3>
+            <p>Identifies critical gaps in federal data collection on homelessness, evaluates Housing First program evidence, and proposes incentive structures to align HUD funding with effective interventions.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="year" data-reveal>
+        <h2>2023</h2>
+        <ul class="brief-list" data-reveal>
+          <li class="brief-item" data-team="tech">
+            <div class="brief-meta"><span class="team">Technology Policy team</span><span>Fall 2023</span><span>Open access</span></div>
+            <h3><a href="../briefs/building-electrification.html">Accelerating Building Electrification in New England: A Legislative Roadmap</a></h3>
+            <p>Examines barriers to residential building electrification across New England and proposes a coordinated regional framework for heat pump adoption and grid modernization.</p>
+          </li>
+          <li class="brief-item" data-team="health">
+            <div class="brief-meta"><span class="team">Health Policy team</span><span>Fall 2023</span><span>Landing page forthcoming</span></div>
+            <h3>Mental Health Screenings and Youth: A Policy Framework for School-Based Intervention</h3>
+            <p>Analyzes universal mental health screening programs in K–12 schools and proposes a tiered federal framework for school-district implementation.</p>
+          </li>
+          <li class="brief-item" data-team="education">
+            <div class="brief-meta"><span class="team">Education Policy team</span><span>Fall 2023</span><span>Landing page forthcoming</span></div>
+            <h3>Evaluating the Domestic Impact of Returned Peace Corps Volunteers: A Massachusetts Case Study</h3>
+            <p>Studies the civic and educational impact of returned Peace Corps volunteers as community educators, proposing federal incentives to direct this workforce toward under-resourced school districts.</p>
+          </li>
+          <li class="brief-item" data-team="economics">
+            <div class="brief-meta"><span class="team">Economics &amp; Labor team</span><span>Fall 2023</span><span>Landing page forthcoming</span></div>
+            <h3>Gig Work and the Benefits Gap: A Framework for Portable Worker Benefits</h3>
+            <p>Analyzes structural exclusion of platform workers from employment benefits and proposes a portable benefits model drawing on state-level pilots in New York and Washington.</p>
+          </li>
+          <li class="brief-item" data-team="education">
+            <div class="brief-meta"><span class="team">Education Policy team</span><span>Spring 2023</span><span>Landing page forthcoming</span></div>
+            <h3>School Resource Officers and the School-to-Prison Pipeline</h3>
+            <p>Analyzes the evidence on SRO programs and their disproportionate impact on students of color, proposing alternative school safety models grounded in restorative practice.</p>
+          </li>
+          <li class="brief-item" data-team="health">
+            <div class="brief-meta"><span class="team">Health Policy team</span><span>Spring 2023</span><span>Landing page forthcoming</span></div>
+            <h3>Addressing the Fentanyl Epidemic: Harm Reduction Policy at the State Level</h3>
+            <p>Examines harm reduction strategies — naloxone access, supervised consumption sites, drug checking services — and evaluates legislative pathways across high-burden states.</p>
+          </li>
+          <li class="brief-item" data-team="tech">
+            <div class="brief-meta"><span class="team">Technology Policy team</span><span>Spring 2023</span><span>Landing page forthcoming</span></div>
+            <h3>Autonomous Vehicles and Liability: Filling the Legislative Gap</h3>
+            <p>Reviews the patchwork of state AV legislation and proposes a federal baseline framework for liability, insurance, and data-sharing requirements.</p>
+          </li>
+          <li class="brief-item" data-team="economics">
+            <div class="brief-meta"><span class="team">Economics &amp; Labor team</span><span>Spring 2023</span><span>Landing page forthcoming</span></div>
+            <h3>Reshoring Manufacturing: Trade Policy Tools and Their Limits</h3>
+            <p>Evaluates the economic evidence on domestic manufacturing subsidies, tariff policy, and industrial strategy following the CHIPS Act and IRA, with recommendations for a durable U.S. industrial policy framework.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="year" data-reveal>
+        <h2>2022</h2>
+        <ul class="brief-list" data-reveal>
+          <li class="brief-item" data-team="education">
+            <div class="brief-meta"><span class="team">Education Policy team</span><span>Fall 2022</span><span>Open access</span></div>
+            <h3><a href="../briefs/covid-education.html">Challenges and Opportunities in the COVID-19 Global Education Response</a></h3>
+            <p>Assesses how school systems worldwide responded to pandemic disruptions and identifies durable policy reforms for an equitable recovery in global education.</p>
+          </li>
+          <li class="brief-item" data-team="tech">
+            <div class="brief-meta"><span class="team">Technology Policy team</span><span>Fall 2022</span><span>Landing page forthcoming</span></div>
+            <h3>Patent Trolling and Innovation: A Reform Agenda for the ITC</h3>
+            <p>Investigates non-practicing entities' role in suppressing downstream innovation, with targeted reforms to the ITC's Section 337 exclusion order process.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="cite-note">
+        <h2>Citing our work</h2>
+        <p>Each brief has a landing page with its abstract, keywords and a suggested citation. Briefs with DOIs registered through Crossref are marked as such; until then, use the landing page address as the stable reference.</p>
+      </div>
+    </div>
   </div>
-
-  <!-- 2024 -->
-  <h2 style="font-size:1rem; font-weight:700; font-family:'Inter',sans-serif; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-3); margin-bottom:0; padding-bottom:0.75rem; border-bottom:2px solid var(--border);">2024</h2>
-
-  <div class="brief-list">
-
-    <a href="aging-womens-healthcare.html" class="brief-item">
-      <div>
-        <div class="brief-item-team text-crimson">Health Policy Team</div>
-        <h3>Bridging Gaps in Care: Strategic Policy Initiatives for Enhancing Health Care Services for Aging Women</h3>
-        <p>Evaluates federal and state-level gaps in healthcare delivery for women over 65, with recommendations for Medicare reform, community-based care, and preventive service coverage expansion.</p>
-        <div style="margin-top:0.625rem; display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center;">
-          <span class="tag">Medicare</span><span class="tag">Women's Health</span><span class="tag">Aging Care</span>
-          <span class="open-access-badge" style="margin-left:0.25rem;">✓ Open Access</span>
-        </div>
+</section>
+</main>
+<footer class="site-footer on-crimson">
+  <div class="wrap">
+    <div class="postcard scallop-top">
+      <div class="msg">
+        <h2>Policy Program</h2>
+        <p>Harvard IOP's independent, student-run think tank, publishing open-access policy research since 2007. Harvard undergraduates can apply each semester through the Institute of Politics.</p>
+        <a class="link" href="../briefs/index.html">Read our briefs</a>
       </div>
-      <div class="brief-item-meta">
-        <div class="brief-item-date">Spring 2024</div>
-        <div style="font-size:0.6875rem; color:var(--text-3); margin-top:0.375rem; font-family:'Courier New',monospace;">DOI pending</div>
-      </div>
-    </a>
-
-    <div class="brief-item" style="cursor:default;">
-      <div>
-        <div class="brief-item-team text-crimson">Economics &amp; Labor Team</div>
-        <h3 style="color:var(--text-2); font-style:italic;">Federal Homelessness Research: Gaps, Incentives, and a Path Forward</h3>
-        <p>Identifies critical gaps in federal data collection on homelessness, evaluates Housing First program evidence, and proposes incentive structures to align HUD funding with effective interventions.</p>
-        <div style="margin-top:0.625rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <span class="tag tag-neutral">Housing</span><span class="tag tag-neutral">Homelessness</span><span class="tag tag-neutral">HUD</span>
-        </div>
-      </div>
-      <div class="brief-item-meta">
-        <div class="brief-item-date">Spring 2024</div>
-        <div style="font-size:0.75rem; color:var(--text-3); margin-top:0.25rem;">Landing page forthcoming</div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- 2023 -->
-  <h2 style="font-size:1rem; font-weight:700; font-family:'Inter',sans-serif; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-3); margin-top:3rem; margin-bottom:0; padding-bottom:0.75rem; border-bottom:2px solid var(--border);">2023</h2>
-
-  <div class="brief-list">
-
-    <a href="building-electrification.html" class="brief-item">
-      <div>
-        <div class="brief-item-team text-crimson">Technology Policy Team</div>
-        <h3>Accelerating Building Electrification in New England: A Legislative Roadmap</h3>
-        <p>Examines barriers to residential building electrification across New England and proposes a coordinated regional framework for heat pump adoption and grid modernization.</p>
-        <div style="margin-top:0.625rem; display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center;">
-          <span class="tag">Energy Policy</span><span class="tag">Electrification</span><span class="tag">New England</span>
-          <span class="open-access-badge" style="margin-left:0.25rem;">✓ Open Access</span>
-        </div>
-      </div>
-      <div class="brief-item-meta">
-        <div class="brief-item-date">Fall 2023</div>
-        <div style="font-size:0.6875rem; color:var(--text-3); margin-top:0.375rem; font-family:'Courier New',monospace;">DOI pending</div>
-      </div>
-    </a>
-
-    <div class="brief-item" style="cursor:default;">
-      <div>
-        <div class="brief-item-team text-crimson">Health Policy Team</div>
-        <h3 style="color:var(--text-2); font-style:italic;">Mental Health Screenings and Youth: A Policy Framework for School-Based Intervention</h3>
-        <p>Analyzes universal mental health screening programs in K–12 schools and proposes a tiered federal framework for school-district implementation.</p>
-        <div style="margin-top:0.625rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <span class="tag tag-neutral">Mental Health</span><span class="tag tag-neutral">Youth Policy</span>
-        </div>
-      </div>
-      <div class="brief-item-meta">
-        <div class="brief-item-date">Fall 2023</div>
-        <div style="font-size:0.75rem; color:var(--text-3); margin-top:0.25rem;">Landing page forthcoming</div>
-      </div>
-    </div>
-
-    <div class="brief-item" style="cursor:default;">
-      <div>
-        <div class="brief-item-team text-crimson">Education Policy Team</div>
-        <h3 style="color:var(--text-2); font-style:italic;">Evaluating the Domestic Impact of Returned Peace Corps Volunteers: A Massachusetts Case Study</h3>
-        <p>Studies the civic and educational impact of returned Peace Corps volunteers as community educators, proposing federal incentives to direct this workforce toward under-resourced school districts.</p>
-        <div style="margin-top:0.625rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <span class="tag tag-neutral">Civic Education</span><span class="tag tag-neutral">Workforce</span>
-        </div>
-      </div>
-      <div class="brief-item-meta">
-        <div class="brief-item-date">Fall 2023</div>
-        <div style="font-size:0.75rem; color:var(--text-3); margin-top:0.25rem;">Landing page forthcoming</div>
-      </div>
-    </div>
-
-    <div class="brief-item" style="cursor:default;">
-      <div>
-        <div class="brief-item-team text-crimson">Economics &amp; Labor Team</div>
-        <h3 style="color:var(--text-2); font-style:italic;">Gig Work and the Benefits Gap: A Framework for Portable Worker Benefits</h3>
-        <p>Analyzes structural exclusion of platform workers from employment benefits and proposes a portable benefits model drawing on state-level pilots.</p>
-        <div style="margin-top:0.625rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <span class="tag tag-neutral">Labor Law</span><span class="tag tag-neutral">Gig Economy</span>
-        </div>
-      </div>
-      <div class="brief-item-meta">
-        <div class="brief-item-date">Fall 2023</div>
-        <div style="font-size:0.75rem; color:var(--text-3); margin-top:0.25rem;">Landing page forthcoming</div>
-      </div>
-    </div>
-
-    <div class="brief-item" style="cursor:default;">
-      <div>
-        <div class="brief-item-team text-crimson">Education Policy Team</div>
-        <h3 style="color:var(--text-2); font-style:italic;">School Resource Officers and the School-to-Prison Pipeline</h3>
-        <p>Analyzes the evidence on SRO programs and their disproportionate impact on students of color, proposing alternative school safety models grounded in restorative practice.</p>
-        <div style="margin-top:0.625rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <span class="tag tag-neutral">School Safety</span><span class="tag tag-neutral">Racial Equity</span>
-        </div>
-      </div>
-      <div class="brief-item-meta">
-        <div class="brief-item-date">Spring 2023</div>
-        <div style="font-size:0.75rem; color:var(--text-3); margin-top:0.25rem;">Landing page forthcoming</div>
-      </div>
-    </div>
-
-    <div class="brief-item" style="cursor:default;">
-      <div>
-        <div class="brief-item-team text-crimson">Health Policy Team</div>
-        <h3 style="color:var(--text-2); font-style:italic;">Addressing the Fentanyl Epidemic: Harm Reduction Policy at the State Level</h3>
-        <p>Examines harm reduction strategies — naloxone access, supervised consumption sites, drug checking services — and evaluates legislative pathways across high-burden states.</p>
-        <div style="margin-top:0.625rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <span class="tag tag-neutral">Substance Use</span><span class="tag tag-neutral">Harm Reduction</span>
-        </div>
-      </div>
-      <div class="brief-item-meta">
-        <div class="brief-item-date">Spring 2023</div>
-        <div style="font-size:0.75rem; color:var(--text-3); margin-top:0.25rem;">Landing page forthcoming</div>
-      </div>
-    </div>
-
-    <div class="brief-item" style="cursor:default;">
-      <div>
-        <div class="brief-item-team text-crimson">Technology Policy Team</div>
-        <h3 style="color:var(--text-2); font-style:italic;">Autonomous Vehicles and Liability: Filling the Legislative Gap</h3>
-        <p>Reviews the patchwork of state AV legislation and proposes a federal baseline framework for liability, insurance, and data-sharing requirements.</p>
-        <div style="margin-top:0.625rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <span class="tag tag-neutral">Autonomous Vehicles</span><span class="tag tag-neutral">Liability</span>
-        </div>
-      </div>
-      <div class="brief-item-meta">
-        <div class="brief-item-date">Spring 2023</div>
-        <div style="font-size:0.75rem; color:var(--text-3); margin-top:0.25rem;">Landing page forthcoming</div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- 2022 -->
-  <h2 style="font-size:1rem; font-weight:700; font-family:'Inter',sans-serif; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-3); margin-top:3rem; margin-bottom:0; padding-bottom:0.75rem; border-bottom:2px solid var(--border);">2022</h2>
-
-  <div class="brief-list">
-
-    <a href="covid-education.html" class="brief-item">
-      <div>
-        <div class="brief-item-team text-crimson">Education Policy Team</div>
-        <h3>Challenges and Opportunities in the COVID-19 Global Education Response</h3>
-        <p>Assesses how school systems worldwide responded to pandemic disruptions and identifies durable policy reforms for an equitable recovery in global education.</p>
-        <div style="margin-top:0.625rem; display:flex; gap:0.5rem; flex-wrap:wrap; align-items:center;">
-          <span class="tag">Global Education</span><span class="tag">COVID-19</span><span class="tag">Equity</span>
-          <span class="open-access-badge" style="margin-left:0.25rem;">✓ Open Access</span>
-        </div>
-      </div>
-      <div class="brief-item-meta">
-        <div class="brief-item-date">Fall 2022</div>
-        <div style="font-size:0.6875rem; color:var(--text-3); margin-top:0.375rem; font-family:'Courier New',monospace;">DOI pending</div>
-      </div>
-    </a>
-
-    <div class="brief-item" style="cursor:default;">
-      <div>
-        <div class="brief-item-team text-crimson">Technology Policy Team</div>
-        <h3 style="color:var(--text-2); font-style:italic;">Patent Trolling and Innovation: A Reform Agenda for the ITC</h3>
-        <p>Investigates non-practicing entities' role in suppressing downstream innovation, with targeted reforms to the ITC's Section 337 exclusion order process.</p>
-        <div style="margin-top:0.625rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <span class="tag tag-neutral">Intellectual Property</span><span class="tag tag-neutral">Patent Reform</span>
-        </div>
-      </div>
-      <div class="brief-item-meta">
-        <div class="brief-item-date">Fall 2022</div>
-        <div style="font-size:0.75rem; color:var(--text-3); margin-top:0.25rem;">Landing page forthcoming</div>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <div class="footer-name">Policy Program</div>
-      <p>Harvard Institute of Politics<br/>79 John F. Kennedy Street<br/>Cambridge, MA 02138</p>
-    </div>
-    <div class="footer-col">
-      <h5>Research Teams</h5>
-      <ul>
-        <li><a href="../teams/health.html">Health Policy</a></li>
-        <li><a href="../teams/tech-policy.html">Technology Policy</a></li>
-        <li><a href="../teams/education.html">Education Policy</a></li>
-        <li><a href="../teams/economics.html">Economics &amp; Labor</a></li>
+      <address>
+        <span class="postage"><img src="../assets/grouppolicy.jpg" alt="" width="80" height="107" loading="lazy"></span>
+        <a href="mailto:policy@harvardiop.org">policy@harvardiop.org</a>
+        <span>Harvard Institute of Politics</span>
+        <span>79 John F. Kennedy Street</span>
+        <span>Cambridge, MA 02138</span>
+        <a href="https://iop.harvard.edu/programs/policy-program" target="_blank" rel="noopener">iop.harvard.edu</a>
+      </address>
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../teams/health.html">Research teams</a></li>
+        <li><a href="../briefs/index.html">Briefs</a></li>
+        <li><a href="../team.html">Our team</a></li>
+        <li><a href="../contact.html">Contact us</a></li>
       </ul>
+      <p class="imprint">© 2026 Harvard Institute of Politics Policy Program. Photographs by the Policy Program.</p>
     </div>
-    <div class="footer-col">
-      <h5>Program</h5>
-      <ul>
-        <li><a href="../people.html">People</a></li>
-        <li><a href="index.html">Research Briefs</a></li>
-        <li><a href="https://iop.harvard.edu/programs/policy-program" target="_blank" rel="noopener noreferrer">IOP Website ↗</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2024 Harvard IOP Policy Program</span>
-    <a href="https://iop.harvard.edu" target="_blank" rel="noopener noreferrer">iop.harvard.edu ↗</a>
   </div>
 </footer>
-
+<script src="../site.js"></script>
 </body>
 </html>
